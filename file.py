@@ -32,4 +32,14 @@ root = tk.Tk()
 root.title("Word Counter")
 root.geometry("350x250")
 
-result_text = tk.
+result_text = tk.String(var)
+result_text.set("Results will appear here.")
+
+instruction = tk.label(root, text"Press the button to choose a text file on your computer.", wraplength=300, pady=15)
+instruction.pack()
+
+button = tk.label(root, textvariable=result_text, pady=20)
+result_label.pack()
+
+if __name__ == "__main__":
+  root.mainloop()
